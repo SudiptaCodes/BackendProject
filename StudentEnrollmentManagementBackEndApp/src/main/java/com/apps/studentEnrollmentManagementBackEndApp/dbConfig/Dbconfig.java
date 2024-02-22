@@ -31,10 +31,10 @@ public class Dbconfig {
 				properties.put("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
 				properties.put("hibernate.connection.url", "jdbc:mysql://localhost:3306/courseenrollmentdb?useSSL=false");
 				properties.put("hibernate.connection.username", "root");
-				properties.put("hibernate.connection.password", "7908257428");
+				properties.put("hibernate.connection.password", "Sudipta@2023");
 				properties.put("hibernate.show_sql", "true");
 				properties.put("hibernate.format_sql", "true");
-				properties.put("hibernate.hbm2ddl.auto", "update");
+				properties.put("hibernate.hbm2ddl.auto", "create");
 				configuration.setProperties(properties);
 				configuration.addAnnotatedClass(Student.class).addAnnotatedClass(Course.class)
 						.addAnnotatedClass(CourseEnrolled.class);
